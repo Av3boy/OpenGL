@@ -13,10 +13,37 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Source Files\Render">
+      <UniqueIdentifier>{758153fe-dacb-46cf-9246-7e2d1cf0f5b1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Render\Primitives">
+      <UniqueIdentifier>{ea8252bb-4d22-4155-b7a8-20f3fe24540c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Textures">
+      <UniqueIdentifier>{7bd04cdc-645e-4f58-9a5f-092286e95df9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Audio">
+      <UniqueIdentifier>{3d4effee-800c-4df3-94ea-d1e655bcc64b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Audio\files">
+      <UniqueIdentifier>{8f2e7f09-5683-4a7d-a6ae-ba4fe1eb3340}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Render\shaders">
+      <UniqueIdentifier>{b2674f26-8018-409f-a072-8dbfb5e9d3d9}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Program.cpp">
       <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AudioPlayer.cpp">
+      <Filter>Source Files\Audio</Filter>
+    </ClCompile>
+    <ClCompile Include="Draw2D.cpp">
+      <Filter>Source Files\Render\Primitives</Filter>
+    </ClCompile>
+    <ClCompile Include="LoadShaders.hpp">
+      <Filter>Source Files\Render</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -29,5 +56,24 @@
     <ClInclude Include="Input.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="AudioPlayer.h">
+      <Filter>Source Files\Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="Draw2D.h">
+      <Filter>Source Files\Render\Primitives</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="..\..\CSharp\Frequnez\Audio\Stephen Walking - Glide.mp3">
+      <Filter>Resource Files</Filter>
+    </Media>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="SimpleFragmentShader.fragmentshader">
+      <Filter>Source Files\Render\shaders</Filter>
+    </None>
+    <None Include="SimpleVertexShader.vertexshader">
+      <Filter>Source Files\Render\shaders</Filter>
+    </None>
   </ItemGroup>
 </Project>
