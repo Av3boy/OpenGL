@@ -3,19 +3,12 @@
 class Draw2D
 {
 public:
-	Draw2D();
-	~Draw2D();
 
-	//static void DrawTriangle();
+	static void DrawTriangle();
+	static void DrawQuad();
+	static void LoadBuffers(float pos[], int size);
+	static void LoadIndexBuffer(unsigned int pos[], int size);
 
 private:
 
 };
-
-Draw2D::Draw2D()
-{
-}
-
-Draw2D::~Draw2D()
-{
-}

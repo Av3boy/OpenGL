@@ -19,7 +19,12 @@ public:
 	} window;
 
 	void Start();
-	void FrameTick();
+	void FrameTick(GLFWwindow* window);
+	void Draw(GLFWwindow* window);
+
+	static void GLClearError();
+
+	static bool GLLogCall(const char* function, const char* file, int line);
 
 private:
 	
